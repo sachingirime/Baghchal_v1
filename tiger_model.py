@@ -183,8 +183,10 @@ def best_tiger_move(board, model,  rnd=0):
     tiger_index = final_tiger_move(board,best_move)
     return([tiger_index,best_move])
 
+# try your board here 
+
 board1 = [[213,100,219,205,0],[102,210,0,0,101],[213,0,215,207,0],[0,214,217,203,0],[0,0,103,209,218]]
-ok = best_tiger_move(board1,model)
+model_prediction = best_tiger_move(board1,model)
 print("Best move for tiger")
-print(ok)
+print(model_prediction)
 
