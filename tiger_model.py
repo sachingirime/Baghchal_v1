@@ -20,7 +20,7 @@ import os
 
 import tensorflow as tf
 
-model = tf.keras.models.load_model('model')
+model = tf.keras.models.load_model('model_v1')
 
 # Check its architecture
 model.summary()
@@ -185,6 +185,6 @@ def best_tiger_move(board, model,  rnd=0):
 
 board1 = [[213,100,219,205,0],[102,210,0,0,101],[213,0,215,207,0],[0,214,217,203,0],[0,0,103,209,218]]
 ok = best_tiger_move(board1,model)
-print("Best moves")
+print("Best move for tiger")
 print(ok)
 
